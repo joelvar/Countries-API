@@ -5,7 +5,7 @@ import RegionPicker from './components/RegionPicker';
 import Countries from './components/Countries';
 
 const App = () => {
-  const {selectedRegion,setSelectedRegion} = useState(null);
+  const [selectedRegion,setSelectedRegion] = useState(null);
 
   const onRegionPickHandler = (region) => {
     setSelectedRegion(region);
