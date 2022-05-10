@@ -4,6 +4,7 @@ import africaimg from '../assets/africa.jpg';
 import americasimg from '../assets/americas.PNG';
 import asiaimg from '../assets/asia.jpg';
 import europeimg from '../assets/europe.PNG';
+import oceaniaimg from '../assets/oceania.jpg';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -72,6 +73,21 @@ const RegionPicker = ({onRegionPickHandler}) => {
                 <div className="region-heading">
                   <Typography variant="h3">Americas</Typography>
                 </div>
+                
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={12} md={6} lg={6}>
+              <div
+                className="region-parent"
+                onClick={() => onRegionPickHandler("oceania")}
+              >
+                <div className="region-image">
+                  <img src={oceaniaimg} alt="#" />
+                </div>
+                <div className="region-heading">
+                  <Typography variant="h3">Oceania</Typography>
+                </div>
+                
               </div>
             </Grid>
           </Grid>
